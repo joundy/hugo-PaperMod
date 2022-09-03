@@ -11,6 +11,11 @@
         {{ .Content | markdownify }}
     </div>
     <footer class="entry-footer">
+		{{- if .ResumeUrl}}
+		<div class="resume-button">
+			<a class="resume-button__link" href="{{ .ResumeUrl }}">{{ .ResumeText | default "My Resume"}}</a>
+		</div>
+		{{- end -}}
         {{ partial "social_icons.html" site.Params.socialIcons }}
     </footer>
 </article>
