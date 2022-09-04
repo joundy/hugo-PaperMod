@@ -125,15 +125,6 @@
 			<p><span class="resume-bold">Leverage Knowledge: </span>PHP, Javascript, Oracle Database, SOAP API</p>
 		</div>
 	</div>
-	<!-- <div class="resume-software-projects resume-section"> -->
-	<!-- 	<div class="resume-divider"> -->
-	<!-- 		<p>Software Projects</p> -->
-	<!-- 		<div class="resume-line"></div> -->
-	<!-- 	</div> -->
-	<!-- 	<div class="resume-divider-title"> -->
-	<!-- 		<p class="resume-divider-title__description">Aksara Kode (aksarakode.co.id)</p> -->
-	<!-- 	</div> -->
-	<!-- </div> -->
 	<div class="resume-skills resume-section">
 		<div class="resume-divider">
 			<p>Skils</p>
@@ -143,19 +134,22 @@
 		<p><span class="resume-bold">Farmiliar</span>: ReactJS, Python, PHP, Elasticsearch, RabbitMQ, GCP, Prometheus, Loki, OpenShift, Linux Commands, SOAP API, VIM, Blockchain Technologies</p>
 	</div>
 </main>
-<!---->
-<!-- <button onclick="printDiv('printableArea')">Download Resume</button> -->
-<!-- <script> -->
-<!-- 	function printDiv(divName) { -->
-<!--      var printContents = document.getElementById(divName).innerHTML; -->
-<!--      var originalContents = document.body.innerHTML; -->
-<!---->
-<!--      document.body.innerHTML = printContents; -->
-<!---->
-<!--      window.print(); -->
-<!---->
-<!--      document.body.innerHTML = originalContents; -->
-<!-- } -->
-<!-- </script> -->
+
+<div class="resume-download">
+	<button onclick="printDiv('resume-main')">Print the Resume</button>
+</div>
+
+<script>
+	function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+</script>
 
 {{- end }}{{/* end main */}}

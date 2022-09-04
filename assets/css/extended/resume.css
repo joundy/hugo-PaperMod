@@ -3,6 +3,14 @@
 	font-size: 16px;
 	width: 768px !important;
 	padding-right: 12px;
+	margin-bottom: 64px;
+}
+
+@media print {
+	main {
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
 }
 
 .resume-header{
@@ -31,7 +39,7 @@
 .resume-line{
 	width: 100%;
     height: 1px;
-    background-color: var(--secondary);
+    background-color: var(--secondary) !important;
 }
 
 .resume-divider > p {
@@ -74,4 +82,14 @@
 .resume-bold{
 	font-weight: 500;
 	color: var(--content)
+}
+
+.resume-download{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.resume-download > button{
+	font-weight: 600;
 }
