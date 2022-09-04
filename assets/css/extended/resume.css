@@ -1,0 +1,69 @@
+.resume-header{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 12px;
+}
+
+.resume-header__left-info{
+	flex: 1
+}
+
+.resume-header__title{
+	flex: 1;
+	text-align: center;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+}
+
+.resume-header__right-info{
+	flex: 1;
+	text-align: right;
+}
+
+.resume-line{
+	width: 100%;
+    height: 1px;
+    background-color: var(--secondary);
+}
+
+.resume-divider > p {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.resume-divider-title{
+	font-weight: 600;
+	display: flex;
+	justify-content: space-around;
+}
+
+.resume-divider-title__description{
+	font-size: 16px;
+	text-align: left;
+	flex: 1
+}
+
+.resume-divider-title__main{
+	flex: 1;
+	text-align: center;
+}
+
+.resume-divider-title__date{
+	font-size: 16px;
+	flex: 1;
+	text-align: right;
+}
+
+.resume-section{
+	font-size: 16px;
+	margin-bottom: 16px;
+}
+
+.resume-items > ul, .resume-section > ul{
+	margin-left: 24px
+}
+
+.resume-items{
+	margin-bottom: 8px;
+}
