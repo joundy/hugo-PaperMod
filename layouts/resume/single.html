@@ -53,9 +53,21 @@
 			</div>
 			<p>(https://paras.id) The largest NFT Marketplace in Near Protocol</p>
 			<ul>
-				<li></li>
+				<li>Migrated the legacy infrastructure to Kubernetes (GKE), containerized all services using docker, set up the cluster, autoscale, and had to set up the IAM & K8s RABAC for all engineers.</li>
+				<li>Created a script to deploy the service into GKE, this script automatically created a version by the last commit, push to the artifacts repository, and deployed the image into GKE, this is used by all the engineers and improves productivity.</li>
+				<li>Optimized the docker build process, using multistage docker to reduce the image size up to 90% smaller.</li>
+				<li>Created monitoring dashboard using grafana, manually set up Prometheus, and Loki as the time-series DB, implemented the log exporter into critical servers and services, created the query for alerting, and automatically send the report to telegram.</li>
+				<li>Optimized the MongoDB query, profiling to search the slowest query, and created an index for querying documents.</li>
+				<li>Improved the indexer server to handle the massive logs, parsed the logs from block transactions, created a simple queue, and push the data into the message broker.</li>
+				<li>Improved the indexer worker to handle more than 1000 data/sec, and created a queue mechanism using Redis to group the data by id and processed them into the small/sub queue.</li>
+				<li>Created a feature to auto whitelist the smart-contract in the near protocol, and automatically indexed the transaction logs if the smart-contract had implemented the NFT standard.</li>
+				<li>Created a feature dynamic transaction fee for the smart-contract, the owner can update the fee dynamically.</li>
+				<li>Created a feature NFT trade for the smart-contract, the user can trade his own NFT with another user, implemented the refund mechanism to ensure all of the approval ids are successfully approved.</li>
+				<li>Created a feature locked staking for the smart-contract, the user can lock their balance in a period of time to have a chance to get rewards.</li>
+				<li>Implemented minting calendar from the external project, created worker mechanism to synchronize the data from their API.</li>
+				<li>Helped external contract owners to integrate their contracts with the NFT marketplace.</li>
 			</ul>
-			<p><b>Leverage Knowledge: </b>abc, abc, abc</p>
+			<p><b>Leverage Knowledge: </b>Rust, Javascript, MongoDB, Prometheus, Loki, Docker, Kubernetes, GCP</p>
 		</div>
 		<div class="resume-items">
 			<div class="resume-divider-title">
@@ -100,7 +112,7 @@
 			</div>
 			<p>(https://telkomakses.co.id/): Network infrastructure company (Indihome)</p>
 			<ul>
-				<li>Optimize the database’s query to calculate the number of technicians, aggregate the data from a bunch of databases, and then visualised it through the dashboard.</li>
+				<li>Optimized the database’s query to calculate the number of technicians, aggregate the data from a bunch of databases, and then visualised it through the dashboard.</li>
 				<li>Created an interface to do a point redeem mechanism for the technicians.</li>
 				<li>Created a dashboard statistic graph to monitor the technicians by location.</li>
 				<li>Created a telegram chatbot for customer services.</li>
@@ -123,7 +135,7 @@
 			<div class="resume-line"></div>
 		</div>
 		<p><b>Proficient</b>: Golang, Rust, Javascript, MongoDB, MySQL, Redis, Kubernetes, Docker, GIT, REST API, GRPC, GraphQL</p>
-		<p><b>Farmiliar</b>: ReactJS, Python, PHP, Elasticsearch, RabbitMQ, GCP, OpenShift, Linux Commands, SOAP API, VIM, Blockchain Technologies</p>
+		<p><b>Farmiliar</b>: ReactJS, Python, PHP, Elasticsearch, RabbitMQ, GCP, Prometheus, Loki, OpenShift, Linux Commands, SOAP API, VIM, Blockchain Technologies</p>
 	</div>
 </main>
 <!---->
