@@ -20,20 +20,20 @@
 		</div>
 	</div>
 	<div class="resume-education resume-section">
-		<div class="resume-divider">
-			<p>Education</p>
-			<div class="resume-line"></div>
-		</div>
-		<div class="resume-items">
-			<div class="resume-divider-title">
-				<p class="resume-divider-title__description">Jakarta</p>
-				<p class="resume-divider-title__main">Binus University (Resigned)</p>
-				<p class="resume-divider-title__date">2019-2020</p>
-			</div>
-			<ul>
-				<li><span class="resume-bold">Major: </span>Computer Science</li>
-			</ul>
-		</div>
+		<!-- <div class="resume-divider"> -->
+		<!-- 	<p>Education</p> -->
+		<!-- 	<div class="resume-line"></div> -->
+		<!-- </div> -->
+		<!-- <div class="resume-items"> -->
+		<!-- 	<div class="resume-divider-title"> -->
+		<!-- 		<p class="resume-divider-title__description">Jakarta</p> -->
+		<!-- 		<p class="resume-divider-title__main">Binus University (Resigned)</p> -->
+		<!-- 		<p class="resume-divider-title__date">2019-2020</p> -->
+		<!-- 	</div> -->
+		<!-- 	<ul> -->
+		<!-- 		<li><span class="resume-bold">Major: </span>Computer Science</li> -->
+		<!-- 	</ul> -->
+		<!-- </div> -->
 		<div class="resume-items">
 			<div class="resume-divider-title">
 				<p class="resume-divider-title__description">Purwokerto</p>
@@ -53,7 +53,7 @@
 		<div class="resume-items">
 			<div class="resume-divider-title">
 				<p class="resume-divider-title__description">Mid Backend Engineer</p>
-				<p class="resume-divider-title__main">Paras NFT Marketplace (Startup)</p>
+				<p class="resume-divider-title__main">Paras (Startup)</p>
 				<p class="resume-divider-title__date">Jan 2022-Present</p>
 			</div>
 			<p>(<a href="https://paras.id">paras.id</a>) The largest NFT Marketplace in Near Protocol</p>
@@ -135,20 +135,25 @@
 	</div>
 </main>
 
-<div class="resume-download">
-	<button onclick="printDiv('resume-main')">Print the Resume</button>
+<div id="resume-download">
+	<button onclick="printResume()">Print the Resume</button>
 </div>
 
 <script>
-	function printDiv(divName) {
-     var printContents = document.getElementById(divName).innerHTML;
-     var originalContents = document.body.innerHTML;
+	function printResume() {
+		const printContents = document.getElementsByClassName('main')[0].innerHTML;
+		const originalContents = document.body.innerHTML;
 
-     document.body.innerHTML = printContents;
+		document.body.innerHTML = printContents;
 
-     window.print();
+		// adjust the html before printing
+		document.getElementById("resume-download").remove();
+		document.getElementById("resume-main").style.width = "100% !important";
 
-     document.body.innerHTML = originalContents;
+		window.print();
+
+		// restore the default html
+		document.body.innerHTML = originalContents;
 }
 </script>
 
