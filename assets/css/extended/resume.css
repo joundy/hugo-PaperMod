@@ -1,3 +1,9 @@
+#resume-main{
+	color: var(--content);
+	font-size: 16px;
+	/* background-color: var(--code-bg); */
+}
+
 .resume-header{
 	display: flex;
 	justify-content: space-around;
@@ -28,7 +34,6 @@
 }
 
 .resume-divider > p {
-	font-size: 15px;
 	font-weight: 600;
 }
 
@@ -39,7 +44,6 @@
 }
 
 .resume-divider-title__description{
-	font-size: 16px;
 	text-align: left;
 	flex: 1
 }
@@ -50,13 +54,11 @@
 }
 
 .resume-divider-title__date{
-	font-size: 16px;
 	flex: 1;
 	text-align: right;
 }
 
 .resume-section{
-	font-size: 16px;
 	margin-bottom: 16px;
 }
 
@@ -65,5 +67,10 @@
 }
 
 .resume-items{
-	margin-bottom: 8px;
+	margin-bottom: 16px;
+}
+
+.resume-bold{
+	font-weight: 500;
+	color: var(--content)
 }

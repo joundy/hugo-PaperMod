@@ -1,18 +1,22 @@
 {{- define "main" }}
 
 <!-- TODO pass the values from md document -->
-<main id="printableArea">
+<main id="resume-main">
 	<div class="resume-header">
 		<div class="resume-header__left-info">
 			<p>Banjarnegara, Indonesia</p>
-			<p>github.com/joundy</p>
+			<p>
+				<a href="https://github.com/joundy">github.com/joundy</a>
+			</p>
 		</div>
 		<div class="resume-header__title">
 			<h3>Hafiz Joundy Syafie</h3>
 		</div>
 		<div class="resume-header__right-info">
 			<p>contact@joundy.me</p>
-			<p>joundy.me</p>
+			<p>
+				<a href="https://joundy.me">joundy.me</a>
+			</p>
 		</div>
 	</div>
 	<div class="resume-education resume-section">
@@ -27,7 +31,7 @@
 				<p class="resume-divider-title__date">2019-2020</p>
 			</div>
 			<ul>
-				<li><b>Major: </b>Computer Science</li>
+				<li><span class="resume-bold">Major: </span>Computer Science</li>
 			</ul>
 		</div>
 		<div class="resume-items">
@@ -37,7 +41,7 @@
 				<p class="resume-divider-title__date">Jul 2015-Jul 2018</p>
 			</div>
 			<ul>
-				<li><b>Major: </b>Software Engineering</li>
+				<li><span class="resume-bold">Major: </span>Software Engineering</li>
 			</ul>
 		</div>
 	</div>
@@ -52,7 +56,7 @@
 				<p class="resume-divider-title__main">Paras NFT Marketplace (Startup)</p>
 				<p class="resume-divider-title__date">Jan 2022-Present</p>
 			</div>
-			<p>(https://paras.id) The largest NFT Marketplace in Near Protocol</p>
+			<p>(<a href="https://paras.id">paras.id</a>) The largest NFT Marketplace in Near Protocol</p>
 			<ul>
 				<li>Migrated the legacy infrastructure to Kubernetes (GKE), containerized all services using docker, set up the cluster, autoscale, and had to set up the IAM & K8s RABAC for all engineers.</li>
 				<li>Created a script to deploy the service into GKE, this script automatically created a version by the last commit, push to the artifacts repository, and deployed the image into GKE, this is used by all the engineers and improves productivity.</li>
@@ -68,7 +72,7 @@
 				<li>Implemented minting calendar from the external project, created worker mechanism to synchronize the data from their API.</li>
 				<li>Helped external contract owners to integrate their contracts with the NFT marketplace.</li>
 			</ul>
-			<p><b>Leverage Knowledge: </b>Rust, Javascript, MongoDB, Prometheus, Loki, Docker, Kubernetes, GCP</p>
+			<p><span class="resume-bold">Leverage Knowledge: </span>Rust, Javascript, MongoDB, Prometheus, Loki, Docker, Kubernetes, GCP</p>
 		</div>
 		<div class="resume-items">
 			<div class="resume-divider-title">
@@ -76,7 +80,7 @@
 				<p class="resume-divider-title__main">Ruangguru (Startup)</p>
 				<p class="resume-divider-title__date">Jan 2020-Oct 2021</p>
 			</div>
-			<p>(https://www.ruangguru.com/) Education tech company</p>
+			<p>(<a href="https://www.ruangguru.com/">ruangguru.com</a>) Education tech company</p>
 			<ul>
 				<li>Refactored the legacy ‘user’ service to the new codebase standard, the result is the codebase had more maintainability, stability, and ease to compose with another service.</li>
 				<li>Created a new authorization library, changed the communication protocol from HTTP to GRPC.</li>
@@ -87,7 +91,7 @@
 				<li>Created a real-time leaderboard feature, and also created the fallback mechanism when the cache service is down, successfully handling the leaderboard in real-time with thousands of users.</li>
 				<li>Created a service aggregator to aggregate the video API to provide a proper data structure for the CMS dashboard.</li>
 			</ul>
-			<p><b>Leverage Knowledge: </b>Golang, MySQL, Redis, Elasticsearch, Docker, Kubernetes, GCP</p>
+			<p><span class="resume-bold">Leverage Knowledge: </span>Golang, MySQL, Redis, Elasticsearch, Docker, Kubernetes, GCP</p>
 		</div>
 		<div class="resume-items">
 			<div class="resume-divider-title">
@@ -95,7 +99,7 @@
 				<p class="resume-divider-title__main">Telkom Indonesia (Codex)</p>
 				<p class="resume-divider-title__date">Sept 2018-Dec 2019</p>
 			</div>
-			<p>(https://www.telkom.co.id/) Telecommunications network company</p>
+			<p>(<a href="https://www.telkom.co.id/">telkom.co.id</a>) Telecommunications network company</p>
 			<ul>
 				<li>Designed the database schema for HR management apps.</li>
 				<li>Created a live coding feature, and integrate it with the third-party API to compile the test answers from the users.</li>
@@ -103,7 +107,7 @@
 				<li>Become a pioneer to use Graphql as the main protocol to provide better communication between the backend and frontend side.</li>
 				<li>Optimized the query call to the database, and implemented a caching mechanism to improve the API response time.</li>
 			</ul>
-			<p><b>Leverage Knowledge: </b>NodeJS, GraphQL, MongoDB, Docker, OpenShift</p>
+			<p><span class="resume-bold">Leverage Knowledge: </span>NodeJS, GraphQL, MongoDB, Docker, OpenShift</p>
 		</div>
 		<div class="resume-items">
 			<div class="resume-divider-title">
@@ -111,14 +115,14 @@
 				<p class="resume-divider-title__main">Telkom Akses</p>
 				<p class="resume-divider-title__date">Jun 2018-Sept 2019</p>
 			</div>
-			<p>(https://telkomakses.co.id/): Network infrastructure company (Indihome)</p>
+			<p>(<a href="https://telkomakses.co.id/">telkomakses.co.id</a>) Network infrastructure company (Indihome)</p>
 			<ul>
 				<li>Optimized the database’s query to calculate the number of technicians, aggregate the data from a bunch of databases, and then visualised it through the dashboard.</li>
 				<li>Created an interface to do a point redeem mechanism for the technicians.</li>
 				<li>Created a dashboard statistic graph to monitor the technicians by location.</li>
 				<li>Created a telegram chatbot for customer services.</li>
 			</ul>
-			<p><b>Leverage Knowledge: </b>PHP, Javascript, Oracle Database, SOAP API</p>
+			<p><span class="resume-bold">Leverage Knowledge: </span>PHP, Javascript, Oracle Database, SOAP API</p>
 		</div>
 	</div>
 	<!-- <div class="resume-software-projects resume-section"> -->
@@ -135,8 +139,8 @@
 			<p>Skils</p>
 			<div class="resume-line"></div>
 		</div>
-		<p><b>Proficient</b>: Golang, Rust, Javascript, MongoDB, MySQL, Redis, Kubernetes, Docker, GIT, REST API, GRPC, GraphQL</p>
-		<p><b>Farmiliar</b>: ReactJS, Python, PHP, Elasticsearch, RabbitMQ, GCP, Prometheus, Loki, OpenShift, Linux Commands, SOAP API, VIM, Blockchain Technologies</p>
+		<p><span class="resume-bold">Proficient</span>: Golang, Rust, Javascript, MongoDB, MySQL, Redis, Kubernetes, Docker, GIT, REST API, GRPC, GraphQL</p>
+		<p><span class="resume-bold">Farmiliar</span>: ReactJS, Python, PHP, Elasticsearch, RabbitMQ, GCP, Prometheus, Loki, OpenShift, Linux Commands, SOAP API, VIM, Blockchain Technologies</p>
 	</div>
 </main>
 <!---->
