@@ -92,6 +92,19 @@
 	justify-content: center;
 }
 
+#resume-download > button:active{
+  transform: scale(0.96);
+	transition: transform .1s;
+	display: inline-block;
+}
+
 #resume-download > button{
 	font-weight: 600;
+	font-size: 16px;
+	padding: 12px;
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+	background-color: var(--entry);
+	font-weight: 600;
+	text-align: center;
 }
