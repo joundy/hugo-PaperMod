@@ -6,9 +6,10 @@
     default 150 }}" width="{{ .imageWidth | default 150 }}" /> {{- end -}}
   </div>
 
-  {{- if .Title}}
+  {{- if .Name}}
   <header class="entry-header">
-    <h1>{{ .Title | markdownify }}</h1>
+    <h2>{{ .Name | markdownify }}</h2>
+    <p>{{ .Title | markdownify }}</p>
   </header>
   {{- end -}}
 
